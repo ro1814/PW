@@ -1,0 +1,209 @@
+/*Barra de Navegador */
+.nav-enlace {
+    display: inline-block;
+    background: #e4f9f5;
+    color: #11999e;
+    padding: 10px 40px;
+    text-decoration: none;
+    
+}
+.nav-enlace:hover{
+    background: #30e3ca;
+}
+nav {
+    background: #e4f9f5;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 10px 0px 10px;
+}
+.navbutton {
+    background: #e4f9f5;
+    color: #11999e;
+    padding: 10px 0;
+    border: 2px groove #11999e;
+    display: none;
+}
+ .navdos {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-top: 0px;
+    padding-top:0px;
+    justify-content: center;
+}
+.navlang {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px; 
+
+}
+/* Elementoes generales */
+body {
+    background: #e4f9f5;
+}
+h1 {
+    color: #11999e;
+    font-size: 35px;
+}
+h2 {
+    font-size: 25px;
+    color: #11999e;
+}
+p {
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px;
+    color: #40514e;
+}
+h1, h2, p{
+    text-align: center;
+}
+
+.fbox{
+    display: flex;
+}
+.columnatres{
+    background: #a6ebe1;
+    color: #40514e;
+    padding: 20px;
+    width: 50%;
+    margin: 10px;
+}
+ul{
+    list-style-position: inside;
+    margin: auto;
+    padding: auto;
+    background: #a6ebe1;
+    width: 80%;
+    text-align: start;
+    list-style: none;
+    padding-bottom: 20px;
+}
+li {
+    color: #40514e;
+    font-size: 18px;
+}
+/* Elementos en el formulario de contacto */
+.form {
+    display: inline-block;
+    padding: 20px;
+    text-align:left;
+    border-style: groove;
+    border-color: #11999e;
+    max-width: 40%;
+    margin: auto;
+    
+}
+.submitboton {
+    color: #40514e;
+    background: #a6ebe1;
+}
+.flexform {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+div{
+    text-align: center;
+}
+/* Elementos para el footer */
+.footerContainer {
+    display: flexbox;
+    border-style: groove;
+    border-color: #11999e;
+    text-align: center;
+    content: normal;
+}
+/* Elementos de Index */
+.sectionindexflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.indexbox{
+    background: #a6ebe1;
+    color: #40514e;
+    padding: 20px;
+    width: 70%;
+    margin: 20px 20px 0px 20px;
+}
+.pindexbox {
+    background: #a6ebe1;
+    color: #40514e;
+    padding: 20px;
+    width: 70%;
+    margin: 0 20px 20px 20px;
+}
+/* Elementos para la biografía */
+.sectionbioflex {
+    display: inline-block;
+    justify-content: center;
+}
+.indexboximg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.imtext {
+    background: #a6ebe1;
+    color: #40514e;
+    padding: auto;
+    width: 80%;
+    margin: auto;
+}
+
+/* Media queries */
+@media all and (max-width: 600px) {
+    nav{
+        background: #e4f9f5;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-enlace{
+        margin: 10px 0px;
+    }
+    .navbutton {
+        display: inline-block;
+    }
+    .off{
+        display: none;
+    }
+}
+@media all and (max-width: 490px) {
+    .columnatres {
+    background: #a6ebe1;
+    color: #40514e;
+    padding: auto;
+    width: auto;
+    margin: 20px 0;
+    font-size: 10px;
+    text-align: auto;
+    }
+    .form {
+        display: inline-block;
+        padding: 55px;
+        text-align:left;
+        border-style: groove;
+        border-color: #11999e;
+        max-width: 60%;
+        margin: auto;
+        
+    }
+    .submitboton {
+        color: #40514e;
+        background: #a6ebe1;
+    }
+    .flexform {
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
